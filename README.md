@@ -23,7 +23,7 @@ GitHub Repository for [https://github.com/greenGM/Nbaffinity](https://github.com
 
 ## How to use this tool:
 
-1. Download all files.
+1. Download files: download all BTXO.RData.part1.rar to BTXO.RData.part7.rar, and unzip in the same folder, you can obtain ".RData" file.
 
 2. Open in Rstudio.
 
