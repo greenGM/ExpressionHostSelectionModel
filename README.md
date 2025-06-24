@@ -31,21 +31,21 @@ GitHub Repository for [https://github.com/greenGM/ExpressioHostSelectionModel](h
 3. Enter the following code：
    
 '''r
-     load(".RData")
+load(".RData")
   
-     library(tidyverse)
+library(tidyverse)
   
-     library(tidymodels)
+library(tidymodels)
   
-     yourprotein <- read.csv("yourfile.csv",header = F,col.names = name)#Import your data; better without column name, if your data have the right names, please set "header = T".
+yourprotein <- read.csv("yourfile.csv",header = F,col.names = name)#Import your data; better without column name, if your data have the right names, please set "header = T".
     
-     expression_host_for_proteins <- data.frame(name=yourprotein$yourproteinname, #the name of your protein, if you have.
+expression_host_for_proteins <- data.frame(name=yourprotein$yourproteinname, #the name of your protein, if you have.
    
-                                  preclass=predict(final_fit, new_data = testR),#Give the candidate host name for your protein.
+                                preclass=predict(final_fit, new_data = testR),#Give the candidate host name for your protein.
    
-                                  preprob=predict(TdataSW.roF1,unknownS,type = 'prob' ))#Give the probabilities that your protein adapting to different hosts.
+                                preprob=predict(TdataSW.roF1,unknownS,type = 'prob' ))#Give the probabilities that your protein adapting to different hosts.
                                   
-     write.csv( expression_host_for_proteins,' expression_host_for_proteins.csv')\
+write.csv( expression_host_for_proteins,' expression_host_for_proteins.csv')\
 '''   
 
      (Note: Please adjust the above codes to suit your needs.)
