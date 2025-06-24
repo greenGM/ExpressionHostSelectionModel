@@ -30,7 +30,7 @@ GitHub Repository for [https://github.com/greenGM/ExpressioHostSelectionModel](h
 
 3. Enter the following code：
    
-'''r
+```r
 load(".RData")
   
 library(tidyverse)
@@ -46,6 +46,6 @@ expression_host_for_proteins <- data.frame(name=yourprotein$yourproteinname, #th
                                 preprob=predict(TdataSW.roF1,unknownS,type = 'prob' ))#Give the probabilities that your protein adapting to different hosts.
                                   
 write.csv( expression_host_for_proteins,' expression_host_for_proteins.csv')\
-'''   
+```   
 
      (Note: Please adjust the above codes to suit your needs.)
