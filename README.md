@@ -23,12 +23,14 @@ GitHub Repository for [https://github.com/greenGM/ExpressioHostSelectionModel](h
 
 ## How to use this tool:
 
-1. Download files: download all BTXO.RData.part1.rar to BTXO.RData.part7.rar, and unzip in the same folder, you can obtain ".RData" file.
 
-2. Open in Rstudio.
+1. Download files: download all BTXO.RData.part1.rar to BTXO.RData.part7.rar, and unzip them in the same folder. You can obtain the ".RData" file.
+
+2. Open it in Rstudio.
 
 3. Enter the following code：
    
+'''r
      load(".RData")
   
      library(tidyverse)
@@ -43,7 +45,7 @@ GitHub Repository for [https://github.com/greenGM/ExpressioHostSelectionModel](h
    
                                   preprob=predict(TdataSW.roF1,unknownS,type = 'prob' ))#Give the probabilities that your protein adapting to different hosts.
                                   
-     write.csv( expression_host_for_proteins,' expression_host_for_proteins.csv')
-   
+     write.csv( expression_host_for_proteins,' expression_host_for_proteins.csv')\
+'''   
 
      (Note: Please adjust the above codes to suit your needs.)
